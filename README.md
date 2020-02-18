@@ -1,6 +1,7 @@
 # Random Path GAN (RPGAN)
 
-Original pytorch implementation of preprint _RPGAN: GANs Interpretability via Random Routin_.
+Original pytorch implementation of preprint _RPGAN: GANs Interpretability via Random Routing_.
+(https://arxiv.org/abs/1912.10920).
 
 RPGAN is an alternative GAN design based on random routes in generator, which can serve as a tool for generative models interpretability.
 ![alt text](./images/rpgan_forward.png)
