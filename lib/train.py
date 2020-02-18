@@ -43,7 +43,7 @@ def main():
     parser.add_argument('--equal_split', action='store_true', default=False,
                         help='split batch equaly between blocks')
     parser.add_argument('--generator_batch_norm', type=str, choices=BATCH_NORM_TYPES,
-                        default='common', help='batch norm strategy for generator')
+                        default='none', help='batch norm strategy for generator')
     parser.add_argument('--generator_leak', type=float, default=0.0, help='leak in generator lReLU')
 
     parser.add_argument('--discriminator_steps', type=int, default=5,

@@ -8,13 +8,16 @@ RPGAN is an alternative GAN design based on random routes in generator, which ca
 # How to run?
 
 Go to ```./lib```.
-Run train:
-
+Run train:\
 ```python train.py --out <out_directory> --model sn_resnet32 --data cifar10 --data_path <path_to_dataset>```
 
-FID computation:
-
+FID computation:\
 ```python score/scoring.py --dir <train_out_directory>```
+
+To download pretrained models simply run
+```download_pretrained.sh```\
+This script creates a directory ```./pretrained``` and downloads models and configs for CIFAR-10, AnimeFaces and LSUN-Bedroom.
+
 
 # How to visualize?
 
@@ -26,8 +29,9 @@ This script generates images charts with layers variations.
 
 ![alt text](./images/layers_variation_cifar10.png)
 
-Pretrained models location:
-https://drive.google.com/drive/folders/1hn6nk7eM4gv4HU0PXmrhGjD-y1GoDCyz?usp=sharing
+
+![alt text](./images/layers_variation_lsun_ext.png)
+
 
 # License
 Code for FID computation is based on
